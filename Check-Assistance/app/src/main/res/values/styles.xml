@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="Theme.Check" parent="Base.AppTheme" />
+
+    <style name="Base.AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+        <item name="android:windowBackground">@color/window_background</item>
+    </style>
+
+    <style name="Theme.Check.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Check.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Check.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+</resources>
