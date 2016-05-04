@@ -19,6 +19,7 @@ public class Principal extends AppCompatActivity implements OnClickListener {
     private Button Scaner;
 
     private Button check_qr;
+
     private Button check_nfc;
     private Button log_out;
 
@@ -67,13 +68,13 @@ public class Principal extends AppCompatActivity implements OnClickListener {
         switch (v.getId()) {
 
             case R.id.check_qr: {
-                //Intent intent = new Intent(this, MisItems.class);
-                //startActivity(intent);
+                Intent intent = new Intent(this, CheckQR.class);
+                startActivity(intent);
                 break;
             }
             case R.id.check_nfc: {
-                //Intent intent = new Intent(this, ItemsOrganizacion.class);
-                //startActivity(intent);
+                Intent intent = new Intent(this, CheckNFC.class);
+                startActivity(intent);
                 break;
             }
             case R.id.logoutButt: {

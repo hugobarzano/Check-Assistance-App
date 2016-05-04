@@ -20,7 +20,7 @@ import java.util.Map;
 
 public class Login extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String LOGIN_URL = "http://192.168.43.104:8000/androidLogin/";
+    public static final String LOGIN_URL = "http://192.168.1.33:8000/androidLogin/";
     public static final String KEY_USERNAME="username";
     public static final String KEY_PASSWORD="password";
 

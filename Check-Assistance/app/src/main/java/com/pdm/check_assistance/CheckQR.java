@@ -31,9 +31,8 @@ package com.pdm.check_assistance;
         //private RequestQueue requestQueue;
         String item;
         // Atributos
-        private String URL_BASE = "http://noinventory.cloudapp.net/noinventory";
-        private static final String URL_JSON = "/addItemFromQr/";
-        private static final String TAG = "PostQRtoCatalogo";
+        private String URL_BASE = "http://192.168.1.33:8000";
+        private static final String URL_JSON = "/CheckFromQr/";
 
 
         @Override
@@ -82,7 +81,7 @@ package com.pdm.check_assistance;
 
                         Log.d("Response: ", response.toString());
 
-                        Toast toast = Toast.makeText(getApplicationContext(), "ADD OK! ", Toast.LENGTH_SHORT);
+                        Toast toast = Toast.makeText(getApplicationContext(), "Checked! ", Toast.LENGTH_SHORT);
                         toast.show();
 
                     }
