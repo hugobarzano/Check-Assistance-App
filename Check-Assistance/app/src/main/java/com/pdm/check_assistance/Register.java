@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
-    public static final String REGISTER_URL = "http://192.168.1.33:8000/androidRegister/";
+    public static final String REGISTER_URL = "http://192.168.1.34:8000/androidRegister/";
 
     public static final String KEY_USERNAME = "username";
     public static final String KEY_PASSWORD = "password";

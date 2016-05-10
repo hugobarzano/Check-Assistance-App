@@ -32,7 +32,7 @@ public class CheckNFC extends AppCompatActivity {
     public static final String MIME_TEXT_PLAIN = "text/plain";
     public static final String TAG = "NfcTag";
 
-    private String URL_BASE = "http://192.168.1.33:8000";
+    private String URL_BASE = "http://192.168.1.34:8000";
     private static final String URL_JSON = "/CheckFromNfc/";
 
     private TextView sesion;
@@ -47,7 +47,6 @@ public class CheckNFC extends AppCompatActivity {
         setContentView(R.layout.activity_check_nfc);
 
         sesion = (TextView) findViewById(R.id.sesion);
-        check_assistance= (Button) findViewById(R.id.check_assistance);
         mNfcAdapter = NfcAdapter.getDefaultAdapter(this);
 
         if (mNfcAdapter == null) {

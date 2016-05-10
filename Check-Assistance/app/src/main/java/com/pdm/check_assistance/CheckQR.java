@@ -31,7 +31,7 @@ package com.pdm.check_assistance;
         //private RequestQueue requestQueue;
         String item;
         // Atributos
-        private String URL_BASE = "http://192.168.1.33:8000";
+        private String URL_BASE = "http://192.168.1.34:8000";
         private static final String URL_JSON = "/CheckFromQr/";
 
 

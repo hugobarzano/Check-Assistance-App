@@ -27,11 +27,6 @@
         android:layout_height="wrap_content"
         android:text="Check Assistance!"
         android:id="@+id/scan_button"/>
-    <Button
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Check Assistance fails!"
-        android:id="@+id/check_assistance"/>
 
 </LinearLayout>

@@ -25,8 +25,7 @@
         <activity
             android:name=".Principal"
             android:label="@string/title_activity_principal"
-            android:parentActivityName=".Login"
-            android:theme="@style/Theme.Check.NoActionBar">
+            android:parentActivityName=".Login">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pdm.check_assistance.Login" />
@@ -34,8 +33,7 @@
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register"
-            android:parentActivityName=".Login"
-            android:theme="@style/Theme.Check.NoActionBar">
+            android:parentActivityName=".Login">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pdm.check_assistance.Login" />
@@ -43,8 +41,7 @@
         <activity
             android:name=".CheckQR"
             android:label="@string/title_activity_check_qr"
-            android:parentActivityName=".Principal"
-            android:theme="@style/Theme.Check.NoActionBar">
+            android:parentActivityName=".Principal">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.pdm.check_assistance.Principal" />
