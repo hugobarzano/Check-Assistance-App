@@ -22,18 +22,28 @@
         android:text="Dni"/>
 
     <Button
+        style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check Assitance QR"
         android:id="@+id/check_qr" />
 
     <Button
+        style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check Assitance NFC"
         android:id="@+id/check_nfc"/>
 
     <Button
+        style="@style/buttonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Assitance"
+        android:id="@+id/get_qr"/>
+
+    <Button
+        style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LogOut"

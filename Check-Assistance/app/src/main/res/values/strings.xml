@@ -5,4 +5,5 @@
     <string name="title_activity_register">Register</string>
     <string name="title_activity_check_qr">CheckQR</string>
     <string name="title_activity_check_nfc">CheckNFC</string>
+    <string name="title_activity_visualizar_sesion">VisualizarSesion</string>
 </resources>

@@ -8,34 +8,41 @@
     tools:context="com.pdm.check_assistance.Login">
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Username"
         />
 
     <EditText
+        style="@style/editText"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextUsername" />
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter Password"
         />
 
     <EditText
+        style="@style/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:password="true"
         android:id="@+id/editTextPassword" />
 
     <Button
+        style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/buttonLogin" />
     <Button
+        style="@style/buttonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"

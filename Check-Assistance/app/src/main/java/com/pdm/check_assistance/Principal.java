@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class Principal extends AppCompatActivity implements OnClickListener {
@@ -22,6 +21,8 @@ public class Principal extends AppCompatActivity implements OnClickListener {
 
     private Button check_nfc;
     private Button log_out;
+    private Button get_qr;
+
 
 
     private TextView username;
@@ -35,10 +36,10 @@ public class Principal extends AppCompatActivity implements OnClickListener {
 
         //Obteniendo una instancia del boton show_pet_button
         // Scaner = (Button) findViewById(R.id.scaner);
-
         check_qr = (Button) findViewById(R.id.check_qr);
         check_nfc = (Button) findViewById(R.id.check_nfc);
         log_out = (Button) findViewById(R.id.logoutButt);
+        get_qr= (Button) findViewById(R.id.get_qr);
 
 
         //Nombre de usuario y organizacion
@@ -54,6 +55,8 @@ public class Principal extends AppCompatActivity implements OnClickListener {
 
         check_qr.setOnClickListener(this);
         check_nfc.setOnClickListener(this);
+        get_qr.setOnClickListener(this);
+
         log_out.setOnClickListener(this);
 
 
@@ -77,6 +80,11 @@ public class Principal extends AppCompatActivity implements OnClickListener {
                 startActivity(intent);
                 break;
             }
+            case R.id.get_qr: {
+                Intent intent = new Intent(this, VisualizarSesion.class);
+                startActivity(intent);
+                break;
+            }
             case R.id.logoutButt: {
                 SharedPreferences preferences = getSharedPreferences("temp", getApplicationContext().MODE_PRIVATE);
                 SharedPreferences.Editor editor = preferences.edit();
@@ -91,20 +99,27 @@ public class Principal extends AppCompatActivity implements OnClickListener {
     }
 
 
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_principal, menu);
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.action_settings:
-                Toast.makeText(this, "You have selected Bookmark Menu", Toast.LENGTH_SHORT).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
     /*
     //Menu de opciones
     @Override
